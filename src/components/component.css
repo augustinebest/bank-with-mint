@@ -9,6 +9,7 @@
     height: 52px;
     z-index: 20;
     background-color: var(--white);
+    top: 0; left: 0;
 }
 
 .logo_ {
@@ -77,8 +78,39 @@
 
 /* Mobile Navbar */
 .mobile_nav {
-    border: 1px solid #f00;
     height: 52px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+    z-index: 30;
+    background-color: var(--white);
+    top: 0; left: 0;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: var(--ash-3);
+}
+
+/* Mobile Sidebar */
+.mobile_side {
+    width: 260px;
+    height: 100vh;
+    /* border: 1px solid #f00; */
+    position: fixed;
+    z-index: 20;
+    background-color: var(--white);
+    box-shadow: 3px 7px 7px rgba(79, 79, 79, 0.07);
+    left: -260px;
+    transition: 0.7s;
+}
+
+.mobile_side.open_ {
+    left: 0px;
 }
 
 /* Sidebar */
@@ -91,7 +123,7 @@
     font-family: Roboto;
 }
 
-.mySidebar button {
+.mySidebar button, .mobile_side button {
     background-color: var(--green);
     margin: 25px 0px 15px 0px;
     padding: 8px 20px;
@@ -107,7 +139,7 @@
     text-align: center;
 }
 
-.mySidebar li {
+.mySidebar li, .mobile_side li {
     padding: 6px 30px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -116,7 +148,7 @@
     /* transition: 0.9s; */
 }
 
-.mySidebar li img {
+.mySidebar li img, .mobile_side li img {
     margin-right: 12px;
 }
 
@@ -125,7 +157,7 @@
     border-left: 4px solid var(--blue);
 }
 
-.mySidebar li:hover {
+.mySidebar li:hover, .mobile_side li:hover {
     background-color: var(--light-blue);
     border-left: 4px solid var(--blue);
 }
