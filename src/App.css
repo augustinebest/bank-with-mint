@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+html, body, ul {
+  margin: 0; padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --white: #fff;
+  --black: #000;
+  --red: #f00;
+  --blue: #1875F0;
+  --tilt-black: #647787;
+  --search-color: #0E1D25;
+  --green: #27AE60;
+  --background: #f7f8fa;
+  --light-blue: #e8f1fd;
+  --black-1: #787C90;
+  --black-2: #262626;
+  --ash: #f9f8fb;
+  --ash-2: #CED0DA;
+  --dark: #4F4F4F;
+  --yellow: #FDC203;
+  --dark-1: #262626;
+  --ash-3: #787878;
+  --alternate: #EAEEF0;
+  --alternate-2: #7F8FA4;
 }
 
-.App-header {
-  background-color: #282c34;
+li {
+  list-style: none;
+}
+
+.main_dashboard {
+  position: relative;
+  margin-left: 260px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: auto;
+  margin-top: 35px;
+  padding: 15px;
+  background-color: var(--background);
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:focus, select:focus, button:active, select:active, input:focus, select:focus {
+  outline: none; border: none;
+}
+
+@media(max-width: 768px) {
+  .desktopNavbar {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .mySidebar {
+    display: none;
   }
+  .main_dashboard {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .mobileSidebar {
+    display: none;
+  }
+  .mtb_ {
+    margin-bottom: 20px;
+  }
+  .big_chart_header {
+    display: block !important;
+  }
+  .big_chart_nav {
+    margin-top: 10px;
+  }
+  .big_chart_header select {
+    width: 150px !important;
+  }
+  .mx-50 {
+    display: block !important;
+  }
+  .mx-50 div:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width: 768px) {
+  .mobile_nav {
+    display: none;
+  }
+  .parRight {
+    padding-right: 0px !important;
+}
+
+.parLeft {
+    padding-left: 0px !important;
+}
 }

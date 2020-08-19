@@ -75,6 +75,12 @@
     border-bottom: 1px solid var(--search-color);
 }
 
+/* Mobile Navbar */
+.mobile_nav {
+    border: 1px solid #f00;
+    height: 52px;
+}
+
 /* Sidebar */
 
 .mySidebar {
@@ -94,6 +100,7 @@
     font-weight: bold;
     font-size: 12px;
     font-family: Roboto;
+    border: none;
 }
 
 .mx100 {
