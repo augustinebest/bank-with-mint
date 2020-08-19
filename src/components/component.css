@@ -1,0 +1,130 @@
+.myNavbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 42px;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+    width: 100%;
+    position: fixed;
+    height: 52px;
+    z-index: 20;
+    background-color: var(--white);
+}
+
+.logo_ {
+    color: var(--blue);
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.avatar_ {
+    border-radius: 50px;
+}
+
+.myNavigation {
+    display: flex;
+    width: 34%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.myNavigation li {
+    color: var(--tilt-black);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.myNavigation li:hover {
+    color: var(--black);
+}
+
+.myNavigation:nth-child(3) {
+    text-align: right;
+}
+
+.ava_ {
+    margin-left: -60px;
+}
+
+.search_form {
+    margin-left: -350px;
+}
+
+.name_ {
+    margin-top: -6px;
+}
+
+.mySearch {
+    color: var(--tilt-black);
+    opacity: 0.6;
+}
+
+.search_form input {
+    border: none;
+    color: var(--search-color);
+    margin-left: 8px;
+    padding: 0px 8px;
+    transition: 0.7s;
+}
+
+.search_form input:focus {
+    outline: none;
+    border-bottom: 1px solid var(--search-color);
+}
+
+/* Sidebar */
+
+.mySidebar {
+    height: 100vh;
+    position: fixed;
+    width: 260px;
+    top: 52px;
+    font-family: Roboto;
+}
+
+.mySidebar button {
+    background-color: var(--green);
+    margin: 25px 0px 15px 0px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Roboto;
+}
+
+.mx100 {
+    text-align: center;
+}
+
+.mySidebar li {
+    padding: 6px 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* border-left: 4px solid var(--white); */
+    color: var(--tilt-black);
+    /* transition: 0.9s; */
+}
+
+.mySidebar li img {
+    margin-right: 12px;
+}
+
+.active {
+    background-color: var(--light-blue);
+    border-left: 4px solid var(--blue);
+}
+
+.mySidebar li:hover {
+    background-color: var(--light-blue);
+    border-left: 4px solid var(--blue);
+}
+
+.main_, .order_, .payment_ {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px 30px;
+}
