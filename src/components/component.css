@@ -94,6 +94,7 @@
 .hamburger {
     font-size: 30px;
     color: var(--ash-3);
+    cursor: pointer;
 }
 
 /* Mobile Sidebar */
