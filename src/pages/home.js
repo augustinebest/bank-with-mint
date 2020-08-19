@@ -174,35 +174,37 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mt-4 _pyheader'>Payments</div>
-                <div className='row my-3 _tablehd'>
-                    <div className='col-md-4 mtb_'>
-                        <div className='desc_1'>
-                            <span>Showing</span>
-                            <select>
-                                <option>20</option>
-                            </select>
-                            <span>
-                                out of 500 payments
+                <div className='padding__'>
+                    <div className='mt-4 _pyheader'>Payments</div>
+                    <div className='row my-3 _tablehd'>
+                        <div className='col-md-4 mtb_'>
+                            <div className='desc_1'>
+                                <span>Showing</span>
+                                <select>
+                                    <option>20</option>
+                                </select>
+                                <span>
+                                    out of 500 payments
                             </span>
+                            </div>
                         </div>
-                    </div>
-                    <div className='col-md-4 mtb_'>
-                        <div className='desc_2'>
-                            <i className='fas fa-search mySearch2'></i>
-                            <input type='text' placeholder='Search payments' />
+                        <div className='col-md-4 mtb_'>
+                            <div className='desc_2'>
+                                <i className='fas fa-search mySearch2'></i>
+                                <input type='text' placeholder='Search payments' />
+                            </div>
                         </div>
-                    </div>
-                    <div className='col-md-4 mtb_'>
-                        <div className='desc_3'>
-                            <span>Show</span>
-                            <select>
-                                <option>All</option>
-                                <option>Reconcilled</option>
-                                <option>Un-reconcilled</option>
-                                <option>Settled</option>
-                                <option>Unsettled</option>
-                            </select>
+                        <div className='col-md-4 mtb_'>
+                            <div className='desc_3'>
+                                <span>Show</span>
+                                <select>
+                                    <option>All</option>
+                                    <option>Reconcilled</option>
+                                    <option>Un-reconcilled</option>
+                                    <option>Settled</option>
+                                    <option>Unsettled</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,15 +230,15 @@ const Home = () => {
                                                 <td>{item.transactionNo}</td>
                                                 <td>{item.time}</td>
                                                 {
-                                                    item.status === 'reconcile' ? 
-                                                    <td><button className='btn_ta reconcile_'>⬤ &nbsp;Reconcilled</button><i className='fas fa-angle-down'></i></td>
-                                                    :
-                                                    item.status === 'unreconcile' ?
-                                                    <td><button className='btn_ta unreconcile_'>⬤ &nbsp;Un-reconcilled</button><i className='fas fa-angle-down'></i></td>
-                                                    :
-                                                    item.status === 'pending' ?
-                                                    <td><button className='btn_ta pending_'>⬤ &nbsp;Pending</button><i className='fas fa-angle-down'></i></td>
-                                                    : null
+                                                    item.status === 'reconcile' ?
+                                                        <td><button className='btn_ta reconcile_'>⬤ &nbsp;Reconcilled</button><i className='fas fa-angle-down'></i></td>
+                                                        :
+                                                        item.status === 'unreconcile' ?
+                                                            <td><button className='btn_ta unreconcile_'>⬤ &nbsp;Un-reconcilled</button><i className='fas fa-angle-down'></i></td>
+                                                            :
+                                                            item.status === 'pending' ?
+                                                                <td><button className='btn_ta pending_'>⬤ &nbsp;Pending</button><i className='fas fa-angle-down'></i></td>
+                                                                : null
                                                 }
                                             </tr>
                                         )
