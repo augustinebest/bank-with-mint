@@ -1,0 +1,271 @@
+.chart_ {
+    background-color: var(--white);
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    border-radius: 2px;
+}
+
+.small_desc {
+    font-size: 12px;
+    color: var(--black-1);
+}
+
+.big_desc {
+    color: var(--black-2);
+    font-size: 18px;
+}
+
+.big_chart {
+    background-color: var(--white);
+}
+
+.big_chart_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* border: 1px solid #f00; */
+
+    align-items: center;
+}
+
+.big_chart_header select {
+    border: 1px solid var(--ash-2);
+    width: 120px;
+    border-radius: 2px;
+    color: var(--ash-2);
+    padding: 2px 9px;
+}
+
+.chart_date {
+    font-size: 15px;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.big_chart_nav {
+    display: flex;
+    /* border: 1px solid #f00; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart_btn {
+    margin-left: 30px;
+}
+
+.chart_btn button {
+    background-color: var(--ash);
+    color: var(--ash-2);
+    border: 1px solid var(--ash-2);
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 0px 8px;
+}
+
+.chart_btn button:first-child {
+    margin-right: 10px;
+}
+
+.noPad {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.chart_img {
+    /* border: 1px solid #f00; */
+    width: 100%;
+}
+
+.chart_img img {
+    /* object-fit: contain; */
+    width: 100%; height: 100%;
+}
+
+.chart_big_num {
+    display: flex;
+}
+
+.chart_num {
+    width: 20%;
+    text-align: center;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.side_chart {
+    background-color: var(--white);
+    border-left: 1px solid var(--background);
+    border-bottom: 1px solid var(--background);
+    padding: 16px 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.ord_name {
+    color: var(--dark-1);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.color_prog {
+    width: 100%;
+    height: 5px;
+    margin: 7px 0px;
+    display: flex;
+}
+
+.color_prog div:nth-child(1) {
+    width: 70%;
+    background-color: var(--green);
+    height: 100%;
+}
+
+.color_prog div:nth-child(2) {
+    width: 30%;
+    background-color: var(--yellow);
+    height: 100%;
+} 
+
+.order_list {
+    color: var(--dark-1);
+    margin-bottom: 10px;
+}
+
+._yellow, ._green, ._blue {
+    font-weight: bold;
+}
+
+._yellow {
+    color: var(--yellow);
+}
+
+._green {
+    color: var(--green);
+}
+
+._blue {
+    color: var(--blue);
+}
+
+._pyheader {
+    font-size: 26px;
+    color: var(--dark-1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+._tablehd, .mx-50 {
+    font-size: 13px;
+    color: var(--dark-1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.desc_1 span {
+    margin-right: 12px;
+}
+
+.desc_1 select {
+    margin-right: 12px;
+    border: none;
+    color: var(--blue);
+}
+
+.desc_2 {
+    /* border: 1px solid #f00; */
+    display: flex;
+    align-items: center;
+}
+
+.desc_2 input {
+    border: none;
+    border-bottom: 1px solid var(--ash-3);
+    flex: 1;
+    background-color: var(--background);
+    padding: 0px 10px 6px 10px;
+}
+
+.mySearch2 {
+    color: var(--ash-3);
+}
+
+.desc_3 span {
+    margin-right: 20px;
+}
+
+.desc_3 select {
+    border: 1px solid var(--ash-2);
+    background-color: var(--background);
+    padding: 5px 10px;
+}
+
+thead {
+    background-color: var(--alternate);
+    color: var(--alternate-2);
+    padding: 200px 0px;
+}
+
+thead tr td {
+    padding: 15px 0px !important;
+    padding-left: 10px !important;
+}
+
+tbody tr td {
+    padding: 20px 10px !important;
+    background-color: var(--white);
+}
+
+.mx-50 {
+    margin: 20px 0px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mx-50 button {
+    border: none;
+    padding: 5px 10px;
+    border: 1px solid var(--ash-2);
+}
+
+.mx-50 button:nth-child(2) {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 13px;
+}
+
+.__circle {
+    border-radius: 50px;
+    border: none;
+    font-size: 12px;
+    color: var(--white);
+    background-color: var(--alternate-2);
+    width: 35px; height: 35px;
+    margin-right: 15px;
+}
+
+.btn_ta {
+    border: 1px solid var(--ash-2);
+    border-radius: 50px;
+    padding: 5px 12px;
+    font-size: 12px;
+    margin-right: 30px;
+    font-weight: 500;
+    background-color: var(--white);
+}
+
+.reconcile_ {
+    color: var(--green);
+}
+
+.pending_ {
+    color: var(--yellow);
+}
+
+.unreconcile_ {
+    color: var(--alternate-2);
+}
+
+tbody tr td i {
+    color: var(--ash-2);
+}
