@@ -1,5 +1,6 @@
 html, body, ul {
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -37,7 +38,7 @@ li {
   margin-left: 260px;
   min-height: 100vh;
   height: auto;
-  margin-top: 35px;
+  margin-top: 52px;
   padding: 15px;
   background-color: var(--background);
 }
@@ -47,7 +48,8 @@ input {
 }
 
 button:focus, select:focus, button:active, select:active, input:focus, select:focus {
-  outline: none; border: none;
+  outline: none;
+  border: none;
 }
 
 @media(max-width: 768px) {
@@ -59,10 +61,10 @@ button:focus, select:focus, button:active, select:active, input:focus, select:fo
   }
   .main_dashboard {
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: 52px;
   }
   .mobileSidebar {
-    display: none;
+    display: block;
   }
   .mtb_ {
     margin-bottom: 20px;
@@ -90,9 +92,11 @@ button:focus, select:focus, button:active, select:active, input:focus, select:fo
   }
   .parRight {
     padding-right: 0px !important;
-}
-
-.parLeft {
+  }
+  .parLeft {
     padding-left: 0px !important;
-}
+  }
+  .mobileSidebar {
+    display: none;
+  }
 }
