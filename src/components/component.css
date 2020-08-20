@@ -9,7 +9,8 @@
     height: 52px;
     z-index: 20;
     background-color: var(--white);
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
 }
 
 .logo_ {
@@ -78,6 +79,7 @@
 }
 
 /* Mobile Navbar */
+
 .mobile_nav {
     height: 52px;
     display: flex;
@@ -89,7 +91,8 @@
     box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
     z-index: 30;
     background-color: var(--white);
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
 }
 
 .hamburger {
@@ -102,21 +105,79 @@
 .mobile_side {
     width: 260px;
     height: 100vh;
-    /* border: 1px solid #f00; */
     position: fixed;
     z-index: 20;
     background-color: var(--white);
-    box-shadow: 3px 7px 7px rgba(79, 79, 79, 0.07);
+    box-shadow: 3px 7px 7px var(--random);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: -260px;
     transition: 0.7s;
+    overflow-y: auto;
+    padding: 220px 0px 90px 0px;
+}
+
+.mobile_side::-webkit-scrollbar {
+    width: 2px;
+}
+
+.mobile_side::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--blue);
+}
+
+.mobile_side::-webkit-scrollbar-thumb {
+    background: var(--white);
+    border-radius: 10px;
+}
+
+.mob_desc {
+    padding: 0px 30px;
+}
+
+.mobile_link {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.mobile_link div {
+    cursor: pointer;
+    padding: 3px 10px;
+    font-size: 12px;
+    color: var(--black);
+    background-color: var(--light-blue);
+    border-radius: 20px;
+}
+
+.__name {
+    margin-bottom: 5px;
+}
+
+.mob_search {
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--eee);
+}
+
+.mob_search input {
+    padding-left: 12px;
+}
+
+.m_btn {
+    margin: 0 !important;
 }
 
 .mobile_side.open_ {
     left: 0px;
 }
 
-/* Sidebar */
+.mob_prof {
+    display: flex;
+    justify-content: space-between;
+}
 
+/* Sidebar */
 .mySidebar {
     height: 100vh;
     position: fixed;
